@@ -1,0 +1,11 @@
+@import "~/.config/rofi/config.rasi"
+@import "~/.config/rofi/colors.rasi"
+
+configuration {
+ font: "SourceSans3 12";
+}
+
+* {
+ background-color: @background;
+ text-color: @foreground;
+}

@@ -1,0 +1,4 @@
+configuration {
+ display-drun: "Apps : ";
+ modi: "run,drun,window";
+}

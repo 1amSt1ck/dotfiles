@@ -1,0 +1,51 @@
+@import "~/.config/rofi/config.rasi"
+@import "~/.config/rofi/colors.rasi"
+
+* {
+ background-color: @background;
+ text-color: @foreground;
+}
+
+window {
+ width: 54px;
+ height: 234px;
+ location: east;
+ transparency: "real";
+ x-offset: -6px;
+ //border-radius: 20px;
+}
+
+inputbar {
+ enabled: false;
+}
+
+listview {
+ margin: 8px;
+ spacing: 8px;
+ cycle: true;
+ dynamic: true;
+ layout: vertical;
+}
+
+mainbox {
+ backgroud-color: @background;
+ children: [listview];
+}
+
+element {
+ orientation: vertical;
+ background-color: @background;
+}
+
+element-text {
+ background-color: inherit;
+ text-color: inherit;
+ font: "FontAwesome 20";
+ horizontal-align: 0.5;
+ vertical-align: 0.5;
+}
+
+element selected {
+ background-color: @background-alt;
+ text-color: @primary;
+}

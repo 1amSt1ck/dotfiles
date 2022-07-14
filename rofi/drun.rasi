@@ -1,0 +1,68 @@
+@import "~/.config/rofi/config.rasi"
+@import "~/.config/rofi/colors.rasi"
+
+configuration {
+ font: "SourceSans3 12";
+ show-icons: true;
+ icon-theme: "Reversal-dark";
+ disable-history: true;
+}
+
+* {
+ background-color: @background;
+ text-color: @foreground;
+}
+
+window {
+ width: 40%;
+ location: north;
+}
+
+inputbar {
+ background-color: @background-alt;
+ children: [prompt, entry];
+ padding: 4 2;
+}
+
+prompt,
+entry {
+ background-color: @background-alt;
+}
+
+listview {
+ background-color: @background;
+ columns: 1;
+ lines: 8;
+ cycle: true;
+ dynamic: true;
+ layout: vertical;
+}
+
+mainbox {
+ children: [listview,inputbar];
+}
+
+element {
+ background-color: @background;
+ padding: 8 2;
+ children: [element-icon, element-text];
+}
+
+element-index,
+element-text,
+element-icon {
+ background-color: inherit;
+}
+
+element-icon {
+ size: 24px;
+}
+
+element selected{
+ background-color: @background-alt;
+ text-color: @primary;
+}
+
+element-text selected {
+ text-color: @primary;
+}
