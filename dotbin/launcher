@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+themedir="$HOME/.config/rofi/drun.rasi"
+rofi -show drun -modi drun -theme $themedir -drun-display-format {name}
